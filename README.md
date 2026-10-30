@@ -5,6 +5,8 @@ PEAR_Experience3_Package
 
 Run `.\clean-workshop-demos.ps1` from anywhere inside this Git repository to remove untracked and ignored contents from the workshop demo directories using `git clean -fdx`. The listed directories themselves are preserved.
 
+The script writes timestamped progress messages for each directory and reports completion or errors.
+
 Preview the files that would be removed without deleting them:
 
 ```powershell

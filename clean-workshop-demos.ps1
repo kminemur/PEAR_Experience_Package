@@ -19,12 +19,12 @@ $cleanPaths = $targets | ForEach-Object { "$_/*" }
 
 Push-Location $repoRoot
 try {
-    if ($PSCmdlet.ShouldProcess(($targets -join ', '), 'git clean -f')) {
+    if ($PSCmdlet.ShouldProcess(($targets -join ', '), 'git clean -fdx')) {
         $existingTargets = @(
             $targets | Where-Object { Test-Path -LiteralPath $_ -PathType Container }
         )
 
-        & git clean -f -- @cleanPaths
+        & git clean -fdx -- @cleanPaths
         if ($LASTEXITCODE -ne 0) {
             throw "git clean failed with exit code $LASTEXITCODE."
         }

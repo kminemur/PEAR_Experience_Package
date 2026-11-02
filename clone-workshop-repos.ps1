@@ -19,7 +19,7 @@ if ($LASTEXITCODE -ne 0 -or -not $repoRoot) {
 }
 
 $repositories = [ordered]@{
-    falling_block_puzzle      = ''
+    falling_block_puzzle_demo = 'https://github.com/kminemur/falling_block_puzzle_demo.git'
     webpage_demo              = 'https://github.com/kminemur/webpage_demo.git'
     research_assistant_demo   = 'https://github.com/kminemur/research_assistant_demo.git'
     chatbot_on_AIPC           = 'https://github.com/kminemur/chatbot_on_AIPC.git'

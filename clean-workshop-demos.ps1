@@ -19,7 +19,7 @@ if ($LASTEXITCODE -ne 0 -or -not $repoRoot) {
 }
 
 $targets = @(
-    'falling_block_puzzle',
+    'falling_block_puzzle_demo',
     'webpage_demo',
     'research_assistant_demo',
     'chatbot_on_AIPC',

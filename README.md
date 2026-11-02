@@ -13,8 +13,8 @@ Preview the files that would be removed without deleting them:
 .\clean-workshop-demos.ps1 -WhatIf
 ```
 
-The script is limited to `falling_block_puzzle`, `webpage_demo`, `research_assistant_demo`, `chatbot_on_AIPC`, and `speech_recognition_on_AIPC`. Git-tracked files and files outside those directories are not removed.
+The script is limited to `falling_block_puzzle_demo`, `webpage_demo`, `research_assistant_demo`, `chatbot_on_AIPC`, and `speech_recognition_on_AIPC`. Git-tracked files and files outside those directories are not removed.
 
 ## Workshop repository cloning
 
-Run `.\clone-workshop-repos.ps1` from anywhere inside this Git repository to clone the configured workshop repositories into their matching folders. It skips folders that already contain files and reports progress with timestamps. `falling_block_puzzle` is skipped until a repository URL is configured; `travel_agent_demo` is cloned into its own folder.
+Run `.\clone-workshop-repos.ps1` from anywhere inside this Git repository to clone the configured workshop repositories into their matching folders. It skips folders that already contain files and reports progress with timestamps. `travel_agent_demo` is cloned into its own folder.

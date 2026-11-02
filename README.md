@@ -1,20 +1,19 @@
-# PEAR_Experience3_Package
-PEAR_Experience3_Package
+# PEAR Experience Package
 
-## Workshop demo cleanup
+## ワークショップデモのクリーンアップ
 
-Run `.\clean-workshop-demos.ps1` from anywhere inside this Git repository to remove untracked and ignored contents from the workshop demo directories using `git clean -fdx`. The listed directories themselves are preserved.
+このGitリポジトリ内の任意の場所から `.\clean-workshop-demos.ps1` を実行すると、`git clean -fdx` を使ってワークショップデモ用ディレクトリ内の未追跡ファイルと無視対象ファイルを削除します。対象のディレクトリ自体は保持されます。
 
-The script writes timestamped progress messages for each directory and reports completion or errors.
+スクリプトは各ディレクトリの処理状況をタイムスタンプ付きで表示し、完了またはエラーを報告します。
 
-Preview the files that would be removed without deleting them:
+削除せずに、削除対象のファイルを確認するには次のコマンドを実行します。
 
 ```powershell
 .\clean-workshop-demos.ps1 -WhatIf
 ```
 
-The script is limited to `falling_block_puzzle_demo`, `webpage_demo`, `research_assistant_demo`, `chatbot_on_AIPC`, and `speech_recognition_on_AIPC`. Git-tracked files and files outside those directories are not removed.
+対象ディレクトリは `falling_block_puzzle_demo`、`webpage_demo`、`research_assistant_demo`、`chatbot_on_AIPC`、`speech_recognition_on_AIPC` に限定されています。Gitで追跡されているファイル、およびこれらのディレクトリ外のファイルは削除されません。
 
-## Workshop repository cloning
+## ワークショップリポジトリのクローン
 
-Run `.\clone-workshop-repos.ps1` from anywhere inside this Git repository to clone the configured workshop repositories into their matching folders. It skips folders that already contain files and reports progress with timestamps. `travel_agent_demo` is cloned into its own folder.
+このGitリポジトリ内の任意の場所から `.\clone-workshop-repos.ps1` を実行すると、設定済みのワークショップリポジトリを対応するフォルダにクローンします。ファイルがすでに存在するフォルダはスキップし、処理状況をタイムスタンプ付きで表示します。`travel_agent_demo` は専用のフォルダにクローンされます。
